@@ -23,14 +23,15 @@ class CashRegister
 
 
    def apply_discount 
-    if discount  == 0
+      
+      if discount  == 0
       "There is no discount to apply."
-    else
+      else
        self.total = (total * ((100.0 - discount.to_f)/100)).to_i
        
       puts "After the discount, the total comes to $#{self.total}."
      
-    end 
+      end 
   
   end
 
@@ -40,6 +41,7 @@ class CashRegister
     self.total = self.total - self.last_transaction # reader method 
     
   end
+
 
 end
 
