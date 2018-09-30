@@ -30,8 +30,8 @@ class CashRegister
        
       puts "After the discount, the total comes to $#{self.total}."
      
-    
     end 
+  
   end
 
 
